@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    border-style: solid;
+    flex-direction: column;
+    width: 250px;
+}
+
+.pos {
+    display: flex;
+    border-style: solid;
+    height: 100px;
+    width: 150px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    /* justify-content: space-around; */
+}
