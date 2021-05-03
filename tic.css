@@ -1,21 +1,49 @@
-.container {
+
+
+h1 {
     display: flex;
-    border-style: solid;
+    justify-content: center;
+    color: green;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    border-style: double;
+    border-width: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 50px;
+}
+
+.game {
+    display: flex;
     flex-direction: column;
     width: 250px;
+    align-items: center;
+    color: indigo;
 }
 
 .pos {
     display: flex;
-    border-style: solid;
+    border-style: ridge;
+    border-color: green;
     height: 100px;
     width: 150px;
     font-size: 50px;
     justify-content: center;
     align-items: center;
+    background-color: goldenrod;
 }
 
 .row {
     display: flex;
     /* justify-content: space-around; */
+}
+
+#uno.row {
+    border-top: none;
+}
+
+.pos .three {
+    border-right: none;
 }

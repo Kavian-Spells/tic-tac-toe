@@ -4,31 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>King-Tac-Toe</title>
     <link rel="stylesheet" href="tic.css" type="text/css">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <h1>King-Tac-Toe</h1>
+    <div class="wrapper">
+    
 
-    <div class="container">
-        <div class="row">
+    <div class="game">
+        <div class="row" id="uno">
             <div class="pos one"></div>
             <div class="pos two"></div>
             <div class="pos three"></div>
         </div>
 
-        <div class="row">
+        <div class="row" id="dos">
             <div class="pos one"></div>
             <div class="pos two"></div>
             <div class="pos three"></div>
         </div>
 
-        <div class="row">
+        <div class="row" id="tres">
             <div class="pos one"></div>
             <div class="pos two"></div>
             <div class="pos three"></div>
+        </div> 
+        <br>
+        <div>
+            <button id="reset">Start New Game</button>
         </div>
+    </div> 
+
+    <div class="stats">
+        <h2>Win Stats:</h2>
+        <p id="Xscore">Player X: 0</p>
+        <p id="Oscore">Player O: 0</p>
     </div>
+   </div>
+
+   <h1 class="winner"></h1>
+
+   <audio id="horn"><source src="horn.mp3" type="audio/mpeg"></audio>
 
     <script src="tic.js"></script>
     
